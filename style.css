@@ -1,0 +1,430 @@
+
+* {
+    font-family: 'Lato', sans-serif;
+}
+.bg-primary-color {
+    background-color: rgba(255, 255, 255, 0.616);
+}
+
+.bg-secondary-color {
+    background-color: #ece8ea;
+}
+
+.primary-color {
+    color: #000000;
+}
+
+.secondary-color {
+    color: #7a7a7a;
+}
+
+/* NAVBAR */
+#navbar {
+    border-bottom: 1px solid #7a7a7a;
+}
+
+#navbar a:hover {
+    color: #d0ff25;
+}
+
+#navbar a.active {
+    border-bottom:  1px solid #050505;
+}
+
+#navbar-brand {
+    display: flex;
+}
+
+#navbar-brand img {
+    width: 50px;
+ }
+
+ #navbar-brand span {
+     font-weight: 700;
+     font-size: 1.5em;
+     margin-left: 0.5em;
+ }
+
+ #navbar-items .navbar-nav {
+     display: flex;
+     justify-content: center;
+     width: 100%;
+ }
+
+ #navbar-items .nav-item {
+     margin: 0.1em;
+ } 
+ /*Home settings*/
+ .home{
+    display:flex;
+    background: url("img/matrix1.jpg") no-repeat center;
+    height: 100vh;
+    color: #fff;
+    min-height: 768px;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.home .max-width .row .home-content{
+    margin-right: center;
+}
+ .home .home-content .text-1{
+    margin-top: 20vh;
+    margin-left: 15vh;
+    text-align:center;
+    font-size: 27px;
+    color: #fff;
+}
+
+.home .max-width .row .home-content .text-2{
+    margin-top: 0px;
+    text-align:center;
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: 15vh;
+  }
+
+  .home .max-width .row .home-content .text-3{
+    margin-left: 50%;
+    margin-right:50%;
+    margin-top: 0px;
+    text-align:center;
+    font-size: 40px;
+    margin: 25%;
+}
+.home .home-content a{
+    text-align:center;
+    display: inline-block;
+    background: rgba(76, 76, 77, 0.562);
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    padding: 12px 36px;
+    margin-top: 10vh;
+    margin-left: 60vh;
+    margin-right: 50vh;
+    font-weight: 400;
+    border-radius: 6px;
+    border: 2px solid rgb(255, 255, 255);
+    transition: all 0.3s ease;
+}
+.home .home-content a:hover{
+    color: #d0ff25;
+    background: #ffffff3f;
+}
+/* About section styling */
+.about { 
+    background-color: #fff;
+    min-height: 500px;
+}
+.about .about-content .left{
+    max-width: 40%;
+}
+
+.about .about-content .left img{
+    float: left;
+    border: #fff;
+    padding: 15px;
+    margin: 1px 10px 10px 1;
+    max-width: 200px;
+    height: 400px;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.about .about-content .right{
+    max-width: 100%;
+    text-align: left;
+}
+
+.about .about-content .right .text{
+    text-align: justify;
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.about .about-content .right .text-1{
+    font-size: 25px;
+
+}
+.about .about-content .right .text span{
+    color: rgb(255, 255, 255);
+}
+
+.about .about-content .right p{
+    text-align: start;
+}
+.about .column-right .a {
+    box-align: center;
+}
+
+.about .about-content .right a{
+    display: inline-block;
+    background: rgb(124, 124, 124);
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid rgb(0, 0, 0);
+    transition: all 0.3s ease;
+}
+.about .about-content .right a:hover{
+    color: rgb(0, 0, 0);
+    background: none;
+}
+/* Soft skills section styling */
+.soft {
+    min-height: 768px;
+
+}
+.soft, .teams{
+    color:#fff;
+    background: #111;
+}
+.soft .title {
+    text-align: left;
+
+}
+.soft .title::before,
+.teams .title::before{
+    background: #fff;
+}
+
+.soft .title::after,
+.teams .title::after{
+    background: #111;
+    content: " com isso posso agregar em sua empresa:";
+}
+
+.soft .soft-content .card{
+    margin: 5px;
+    width: calc(100% - 30px);
+    background: #222;
+    text-align: center;
+    border-radius: 6px;
+    padding: 35px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.soft .soft-content .card:hover{
+    background: rgba(0, 238, 255, 0.103);
+    border: #797979 solid 1px;
+    color: #FFFFFF;
+}
+
+.soft .soft-content .card .box{
+    transition: all 0.2s ease;
+}
+
+.soft .soft-content .card:hover .box{
+    transform: scale(1.15);
+}
+
+.soft .soft-content .card i{
+    font-size: 50px;
+    transition: color 0.3s ease;
+}
+
+.soft .soft-content .card:hover i{
+    color: #d0ff25;
+}
+.soft .soft-content .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+/* Hard skills section styling */
+.hard {
+    background-color: #fff;
+    min-height: 768px;
+}
+.hard .max-width .title {
+    color: rgb(0, 0, 0);
+}
+.hard .title::after{
+    content: " as tecnologias que utilizo: ";
+    
+
+}
+.hard .HSkills-content .column{
+    min-width: 768px;
+   
+}
+
+.hard .HSkills-content .left .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.hard .HSkills-content .left p{
+ 
+    text-align: center;
+    margin-bottom: 100px;
+    line-height: 5vh;
+}
+.hard .HSkills-content .right .bars{
+    margin-bottom: 15px;
+    padding: 5px;
+}
+.hard .HSkills-content .right .info{
+    display: flex;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: space-between;
+}
+.hard .HSkills-content .right span{
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.hard .HSkills-content .right .line{
+    height: 5px;
+    width: 100%;
+    background: lightgrey;
+    position: relative;
+}
+.hard .HSkills-content .right .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgb(1, 48, 202);
+}
+.HSkills-content .right .html::before{
+    width: 70%;
+}
+.HSkills-content .right .css::before{
+    width: 60%;
+}
+.HSkills-content .right .js::before{
+    width: 40%;
+}
+.HSkills-content .right .git::before{
+    width: 60%;
+}
+.HSkills-content .right .github::before{
+    width: 60%;
+}
+.HSkills-content .right .linux::before{
+    width: 30%;
+}
+.HSkills-content .right .data-science::before{
+    width: 20%;
+}
+.HSkills-content .right .mysql::before{
+    width: 60%;
+}
+
+.HSkills-content .right .php::before {
+    width: 30%;
+}
+/* Footer section styling */
+
+footer{
+    background: #111;
+    color: #fff;
+    text-align: center;
+    padding-bottom: 20px;
+    margin-bottom: -75px;
+}
+
+footer span a{
+    width: 10em;
+    color: crimson;
+    text-decoration: none;
+}
+
+footer span a:hover{
+    text-decoration: underline;
+}
+
+.love {
+    display:inline-block;
+    position:relative;
+    top:.1em;
+    font-size:1.8em;
+    color:#d0ff25;
+    transform:scale(.9);
+    animation:love .5s linear infinite alternate-reverse;
+   }
+h3 {
+    font-size: 15px;
+    font-family: 'Red Hat Display', sans-serif;
+    color: white;
+    margin-top: -8px;
+    margin-bottom: 8px;
+}
+
+.center {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 15px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main {
+    width: 100%;
+    background-color: #202121;
+    text-align: center;
+    margin-bottom: -33px;
+    margin-top: 30px;
+}
+
+.icon {
+    width: 70px;
+    height: 70px;
+    margin: -14px;
+    cursor: pointer;
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+
+.icon-center {
+    width: 50px;
+}
+.bi-linkedin {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.bi-linkedin:hover {
+    text-decoration: none;
+    color: #d0ff25;
+    transition: all 0.3s ease;
+}
+
+.bi-github {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.bi-github:hover {
+    text-decoration: none;
+    color: #d0ff25;
+    transition: all 0.3s ease;
+}
+.bi-instagram {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.bi-instagram:hover {
+    text-decoration: none;
+    color: #d0ff25;
+    transition: all 0.3s ease;
+}
+/* Responsive media query start */
+@media (min-width: 768px) {
+    #info-content {
+        padding: 3.5em;
+    }
+
+}

@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio</title>
+    <!--Google Fonts - Lato -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <!--CSS Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+    crossorigin="anonymous">
+    <!--Bootstrap Icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <!--CSS do projeto-->
+    <link rel="stylesheet" href="style.css">
+    <!--JS do projeto-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
+    crossorigin="anonymous">
+</script>
+</head>
+<body>
+        <!--NAVBAR-->
+        <div class="nav navbar navbar-expand-lg fixed-top bg-primary-color" id="navbar">
+            <div class="container py-3">
+              <a href="#" class="navbar-brand primary-color">
+                <img src="img/Perfil.png" alt="Thomas" width="50px">
+                <span>Thomas Ricardo</span>
+                </a>
+              <button
+                class="navbar-toggler" 
+                type="button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#navbar-items" 
+                aria-controls="navbar-items" 
+                aria-expanded="false" 
+                aria-label="Toggle navigation">
+                <i class="bi bi-list"></i>
+              </button>
+              <div class="collapse navbar-collapse" id="navbar-items">
+               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+               <li class="nav-item">
+                <a href="index.html" class="nav-link active primary-color">Home</a>
+               </li>
+               <li class="nav-item">
+                <a href="#about" class="nav-link primary-color">Sobre</a>
+               </li>
+               <li class="nav-item">
+                <a href="#soft" class="nav-link primary-color">Soft skills</a>
+               </li>
+               <li class="nav-item">
+                <a href="#hard" class="nav-link primary-color">Hard skills</a>
+               </li>
+            </ul>
+           </div>
+          </div>
+        </div>
+        <!--Home-->
+        <div class="container" id="slider-container">
+            <div class="carousel slide" id="slider" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button
+                    type="button" 
+                    class="active" 
+                    data-bs-target="#slider" 
+                    data-bs-slide-to="0"
+                    aria-current="true"
+                    aria-label="Slide 1">
+                  </button>
+                </div>
+                <section class="home" id="home">
+                    <div class="max-width">
+                        <div class="row">
+                          <div class="home-content">
+                              <div class="text-1">Olá, meu nome é</div>
+                              <div class="text-2">Thomas</div>
+                              <div class="text-3"><span class="typing"></span></div>
+                              <a href="https://www.linkedin.com/in/thomas-ricardo-83953a184" 
+                              target="_blank">Me encontre aqui</a>
+                          </div>
+                        </div>
+                    </div>
+                  </section>
+                  <!--About-->
+          <section class="about" id="about">  
+            <div class="max-width">
+                <h2 class="title">Sobre mim:</h2>
+                <div class="about-content">
+                    <div class="column left">
+                        <img src="img/Perfil.png" alt="Thomas" width="50px">
+                    </div>
+                    <div class="column right">
+                        <div class="text">Eu sou o Thomas</div>
+                        <div class="text-1">Estudo diariamente para ser um desenvolvedor de alto nível.
+                            <p>Estou aprendendo PHP, JS, NodeJS, React, BootsTrap5, MYSQL, C#, VUE.</p>
+                            <P>Procuro colaborar sempre com toda a comunidade para o melhor aprendizado possível de ambas as partes.</P></div>
+                        <a href="img/curriculo thomas.docx" target="_blank">Baixe meu currículo</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <br> 
+        <!--SoftSkills-->
+        <section class="soft" id="soft">
+            <div class="max-width">
+                <h2 class="title">Soft Skills</h2>
+                <div class="soft-content">
+                    <div class="card">
+                        <div class="box">
+                            <i class="bi bi-chat-square-text-fill"></i>
+                            <div class="text">Comunicação</div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="box">
+                            <i class="bi bi-clipboard-check"></i>
+                            <div class="text">Resiliência</div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="box">
+                            <i class="bi bi-people"></i>
+                            <div class="text">Empatia</div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="box">
+                            <i class="bi bi-lightbulb"></i>
+                            <div class="text">Inovador</div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="box">
+                            <i class="bi bi-recycle"></i>
+                            <div class="text">Pensamento crítico</div>
+                        </div>
+                    </div>
+                   </div>
+                </div>
+            </div>
+        </section>
+        <br>
+        <!--Hardskills-->
+        <section class="hard" id="hard">
+            <div class="max-width">
+                <h2 class="title">Hard Skills</h2>
+                <div class="HSkills-content">
+                    <div class="column right">
+                        <div class="bars">
+                            <div class="info">
+                                <span>HTML</span>
+                                <span>9 meses</span>
+                            </div>
+                            <div class="line html"></div>
+                        </div>
+                        <div class="bars">
+                            <div class="info">
+                                <span>CSS</span>
+                                <span>9 meses</span>
+                            </div>
+                            <div class="line css"></div>
+                        </div>
+                        <div class="bars">
+                            <div class="info">
+                                <span>JavaScript</span>
+                                <span>6 meses</span>
+                            </div>
+                            <div class="line js"></div>
+                        </div>
+                        <div class="bars">
+                            <div class="info">
+                                <span>Git</span>
+                                <span>3 ano</span>
+                            </div>
+                            <div class="line git"></div>
+                        </div>
+                        <div class="bars">
+                            <div class="info">
+                                <span>Github</span>
+                                <span>3 ano</span>
+                            </div>
+                            <div class="line github"></div>
+                        </div>
+                        <div class="bars">
+                            <div class="info">
+                                <span>Linux</span>
+                                <span>1 ano</span>
+                            </div>
+                            <div class="line linux"></div>
+                        </div>
+                        <div class="bars">
+                            <div class="info">
+                                <span>C#</span>
+                                <span>3 meses</span>
+                            </div>
+                            <div class="line data-science"></div>
+                        </div>
+                        <div class="bars">
+                            <div class="info">
+                                <span>MYSQL</span>
+                                <span>6 meses</span>
+                            </div>
+                            <div class="line mysql"></div>
+                        </div>
+                        <div class="bars">
+                            <div class="info">
+                                <span>PHP</span>
+                                <span>3 meses</span>
+                            </div>
+                            <div class="line php"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer main="center">
+            <div class="icon center">
+                <a class="bi bi-linkedin" href="https://www.linkedin.com/in/thomas-ricardo-83953a184" target="_blank"></a>
+            </div>
+            <div class="icon center">
+                <a class="bi bi-github" href="https://github.com/Thomas-Ricardo" target="_blank"></a>
+            </div>
+            <div class="icon center">
+                <i><a class="bi bi-instagram" href="https://www.instagram.com/thomasrik/" target="_blank"></a></i>
+            </div>
+            <h3>Thomas Ricardo
+                <script type="text/javascript">document.write(new Date().getFullYear());</script> &copy;</a> Feito com <span class="love">♥</span></span>
+            </h3>
+        </footer>
+</body>
+</html>
+<!--Sobre mim
+<div class="countainer" id= "info-container">
+    <div class="col-12">
+        <h2 class="title primary-color">Sobre min</h2>
+        <p class="subtitle secondary-color">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae in excepturi ad! Commodi voluptatum voluptatibus eius quos eum reiciendis voluptate doloribus repellat ratione exercitationem neque error dolores, cupiditate culpa ea.
+        </p>
+    </div>
+    <div class="col-12">
+        <div class="row">
+            <div class="col-12 col-md-5">
+                <img src="img/Perfil.jpg" 
+                alt="perfil2" c
+                lass="img-fluid">
+            </div>
+            <div class="col-12 col-md7 bg-secondary-color" id="info-perfil">
+                <div class="row">
+                <h2 class="title primary-color">Eu sou o Thomas</h2>
+                <p class="subtitle secondary-color">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae in excepturi ad! Commodi voluptatum voluptatibus eius quos eum reiciendis voluptate doloribus repellat ratione exercitationem neque error dolores, cupiditate culpa ea.
+                </p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+-->
+ <!--SLIDER
+ /*<div class="container" id="slider-container">
+    <div class="carousel slide" id="slider" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button
+            type="button" 
+            class="active" 
+            data-bs-target="#slider" 
+            data-bs-slide-to="0"
+            aria-current="true"
+            aria-label="Slide 1">
+          </button>
+
+          <button
+            type="button" 
+            class="active" 
+            data-bs-target="#slider" 
+            data-bs-slide-to="1"
+            aria-current="true"
+            aria-label="Slide 2">
+          </button>
+
+          <button
+            type="button" 
+            class="active" 
+            data-bs-target="#slider" 
+            data-bs-slide-to="2"
+            aria-current="true"
+            aria-label="Slide 3">
+          </button>
+        </div>
+        <div class="collapse">
+                <img src="img/pexels.photo.jpeg" alt="pexels" class="d-block w-100">
+            
+        </div>
+        -->
