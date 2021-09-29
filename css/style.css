@@ -1,19 +1,22 @@
-
 * {
-    font-family: 'Lato', sans-serif;
+    font-family: "Roboto", sans-serif;
 }
+
 .bg-primary-color {
-    background-color: rgba(255, 255, 255, 0.616);
+    background-color: rgba(255, 255, 255, 0.295);
 }
 
 .bg-secondary-color {
-    background-color: #ece8ea;
+    background-color: #ece0ea;
+}
+
+.bg-dark-color {
+    background-color: #050505;
 }
 
 .primary-color {
-    color: #000000;
+    color: #050505;
 }
-
 .secondary-color {
     color: #7a7a7a;
 }
@@ -53,130 +56,86 @@
 
  #navbar-items .nav-item {
      margin: 0.1em;
- } 
- /*Home settings*/
- .home{
-    display:flex;
-    background: url("img/matrix1.jpg") no-repeat center;
-    height: 100vh;
-    color: #fff;
-    min-height: 768px;
-    background-size: cover;
-    background-attachment: fixed;
-}
-.home .max-width .row .home-content{
-    margin-right: center;
-}
- .home .home-content .text-1{
-    margin-top: 20vh;
-    margin-left: 15vh;
-    text-align:center;
-    font-size: 27px;
-    color: #fff;
 }
 
-.home .max-width .row .home-content .text-2{
-    margin-top: 0px;
-    text-align:center;
-    font-size: 75px;
-    font-weight: 600;
-    margin-left: 15vh;
-  }
-
-  .home .max-width .row .home-content .text-3{
-    margin-left: 50%;
-    margin-right:50%;
-    margin-top: 0px;
-    text-align:center;
-    font-size: 40px;
-    margin: 25%;
+/* SLIDER */
+#slider {
+    margin-top: 10em;
+    margin-bottom: 1em;
 }
-.home .home-content a{
-    text-align:center;
-    display: inline-block;
-    background: rgba(76, 76, 77, 0.562);
-    color: #fff;
-    font-size: 20px;
-    text-align: center;
-    padding: 12px 36px;
-    margin-top: 10vh;
-    margin-left: 60vh;
-    margin-right: 50vh;
-    font-weight: 400;
-    border-radius: 6px;
-    border: 2px solid rgb(255, 255, 255);
-    transition: all 0.3s ease;
-}
-.home .home-content a:hover{
-    color: #d0ff25;
-    background: #ffffff3f;
-}
-/* About section styling */
-.about { 
-    background-color: #fff;
-    min-height: 500px;
-}
-.about .about-content .left{
-    max-width: 40%;
+#slider .carousel-caption {
+    bottom: 3em;
 }
 
-.about .about-content .left img{
-    float: left;
-    border: #fff;
-    padding: 15px;
-    margin: 1px 10px 10px 1;
-    max-width: 200px;
-    height: 400px;
-    width: 200px;
-    object-fit: cover;
-    border-radius: 10px;
+#slider .carousel-caption h5 {
+    margin-top: 1em;
+    font-size:  1.5em;
+    text-shadow:  #000 2px 2px;
 }
 
-.about .about-content .right{
-    max-width: 100%;
-    text-align: left;
+.btn {
+    border-radius: 0;
 }
 
-.about .about-content .right .text{
-    text-align: justify;
-    font-size: 50px;
-    font-weight: 600;
-    margin-bottom: 20px;
-}
-.about .about-content .right .text-1{
-    font-size: 25px;
-
-}
-.about .about-content .right .text span{
-    color: rgb(255, 255, 255);
+#slider .btn {
+    padding: 0.3 0.8em;
+    font-size: 1em;
+    margin-top: 1em;
 }
 
-.about .about-content .right p{
-    text-align: start;
-}
-.about .column-right .a {
-    box-align: center;
+.carousel-control-prev i,
+.carousel-control-next i {
+    color: #ece0ea;
+    font-size: 3em;
 }
 
-.about .about-content .right a{
-    display: inline-block;
-    background: rgb(124, 124, 124);
-    color: #fff;
-    font-size: 20px;
-    font-weight: 500;
-    padding: 10px 30px;
-    margin-top: 20px;
-    border-radius: 6px;
-    border: 2px solid rgb(0, 0, 0);
-    transition: all 0.3s ease;
+.carousel-indicators [data-bs-target] {
+    background-color:#7a7a7a;
+    opacity: 0.8;
+
 }
-.about .about-content .right a:hover{
-    color: rgb(0, 0, 0);
-    background: none;
+
+.carousel-indicators .active {
+    background-color: #d0ff25;
+}
+
+@media(min-width: 768px) {
+    #slider .carousel-caption {
+        bottom: 15em;
+    }
+
+    #slider .carousel-caption h5 {
+        margin-top: 1em;
+        font-size:  5em;
+        text-shadow:  #000 2px 3px;
+    }
+    
+    #slider .btn {
+        padding: 0.7 1.8em;
+        font-size: 1.2em;
+    }
+
+    .carousel-indicators {
+        bottom: 7em;
+    }
+}
+/* ABOUT */
+.about .col-12 h2 {
+    text-shadow:  #000 0.5px 1px;
+}
+.about p {
+    font-size: 1.4em;
+}
+.about .col-12 a{
+    padding: 0.5 1.5em;
+    font-size: 1.2em;    
+}
+.bg-secondary-color {
+    background-color:#7a7a7a31 ;
 }
 /* Soft skills section styling */
 .soft {
-    min-height: 768px;
+    max-width: flex;
 
 }
 .soft, .teams{
@@ -239,7 +198,7 @@
 /* Hard skills section styling */
 .hard {
     background-color: #fff;
-    min-height: 768px;
+    max-width: flex;
 }
 .hard .max-width .title {
     color: rgb(0, 0, 0);
@@ -250,7 +209,7 @@
 
 }
 .hard .HSkills-content .column{
-    min-width: 768px;
+    max-width: flex;
    
 }
 
@@ -420,11 +379,4 @@ h3 {
     text-decoration: none;
     color: #d0ff25;
     transition: all 0.3s ease;
-}
-/* Responsive media query start */
-@media (min-width: 768px) {
-    #info-content {
-        padding: 3.5em;
-    }
-
 }
